@@ -30,10 +30,9 @@ RUN apt-get update && apt-get install -y \
         zip \
         zlib1g-dev
 
-RUN  wget https://gist.githubusercontent.com/johndpope/fc1c2327a4ae255d9c44dda9b67b5288/raw/406369ecc157d60f7a9bac2a0d5be3da9aa62e56/parseyapi.sh \
+RUN  wget https://raw.githubusercontent.com/skerit/DockerParseyMcParsefaceAPI/master/parseyapi.sh \
     && chmod +x parseyapi.sh \
-    && ./parseyapi.sh 
-    
+    && ./parseyapi.sh
 
 EXPOSE 9000
 RUN find / -name "parsey_api" -size +512k -exec cp -t "{}" /work/serving \;
