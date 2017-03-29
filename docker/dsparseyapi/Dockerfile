@@ -5,8 +5,8 @@
 # https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/Dockerfile.devel
 # https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/Dockerfile.devel-gpu
 
-
-FROM gcr.io/tensorflow/tensorflow:latest-devel
+#FROM gcr.io/tensorflow/tensorflow:latest-devel
+FROM gcr.io/tensorflow/tensorflow:0.12.0-devel
 
 ENV SYNTAXNETDIR=/work/serving/tensorflow PATH=$PATH:/root/bin
 
